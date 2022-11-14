@@ -1,1 +1,0 @@
-/home/rosuser/minitest/cuda_histogram/bin/cuda_histogram
