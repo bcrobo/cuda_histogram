@@ -1,0 +1,1 @@
+/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler -Xcompiler=-fPIC -Wno-deprecated-gpu-targets -shared -dlink CMakeFiles/cuda_histogram.dir/cuda_histogram.cu.o -o CMakeFiles/cuda_histogram.dir/cmake_device_link.o  -lcudadevrt -lcudart_static -lrt -lpthread -ldl 
