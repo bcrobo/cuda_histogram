@@ -4,6 +4,7 @@ add_executable(
 	cuda_histogram
 	cuda_histogram.cu)
 
+set_property(TARGET cuda_histogram PROPERTY CUDA_ARCHITECTURES "50")
 set_target_properties(cuda_histogram PROPERTIES CUDA_SEPARABLE_COMPILATION ON)
 target_compile_features(cuda_histogram PUBLIC cxx_std_17)
 target_include_directories(cuda_histogram PRIVATE ${OpenCV_INCLUDE_DIRS})
